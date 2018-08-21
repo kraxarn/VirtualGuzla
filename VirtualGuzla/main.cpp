@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 	// Main loop
 	while (true)
 	{
-		window.Clear();
-		window.Flip();
+		window.clear();
+		window.flip();
 	}
 }

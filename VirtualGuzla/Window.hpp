@@ -29,9 +29,9 @@ namespace ce
 		void setSize(Vector2<int> size);
 
 		/// @brief Clear window with color
-		void Clear(Color color = Color::black);
+		void clear(Color color = Color::black);
 
 		/// @brief Flip renderer
-		void Flip();
+		void flip();
 	};
 }
