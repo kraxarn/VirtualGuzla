@@ -4,6 +4,8 @@
 #include <fstream>
 #include <random>
 
+#include <fmt/format.h>
+
 using namespace std;
 
 #pragma region Global vars
@@ -24,8 +26,17 @@ namespace ce
 		explicit Engine(bool devMode);
 
 		/// @brief Logs to console or file
-		/// @param message Message to log (without new line)
+		/// @param message Message to log (ending with new line)
 		static void log(string message);
+
+		#ifdef FMT_FORMAT_H_
+		/// @brief Log to console or file with formatting
+		template <typename ... A>
+		static void log(string message, A ... args)
+		{
+			fmt::format(message + '\n', args);
+		}
+		#endif
 
 		/// @brief Shows error messages and closes the game
 		/// @param message Message to show
@@ -37,7 +48,7 @@ namespace ce
 
 		/// @brief Gets the path to a writable directory
 		/// @param file Optional file to concatenate
-		static string getWritePath(string file);
+		static string getWritePath(const string& file);
 
 		/// @brief Checks if file exists in write directory
 		/// @param fileName File to check
