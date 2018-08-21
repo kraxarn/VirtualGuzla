@@ -13,5 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\CrowEngine">
+      <UniqueIdentifier>{70e7e2bc-7c96-4b66-9caa-22655ea117ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CrowEngine">
+      <UniqueIdentifier>{8e9701d4-3762-4941-bc7e-38ee95bc7ae8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CrowEngine\Engine.cpp">
+      <Filter>Source Files\CrowEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="CrowEngine\Config.cpp">
+      <Filter>Source Files\CrowEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="CrowEngine\Window.cpp">
+      <Filter>Source Files\CrowEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="CrowEngine\Color.cpp">
+      <Filter>Source Files\CrowEngine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrowEngine.hpp">
+      <Filter>Header Files\CrowEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.hpp">
+      <Filter>Header Files\CrowEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.hpp">
+      <Filter>Header Files\CrowEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.hpp">
+      <Filter>Header Files\CrowEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.hpp">
+      <Filter>Header Files\CrowEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.hpp">
+      <Filter>Header Files\CrowEngine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
